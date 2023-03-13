@@ -28,7 +28,17 @@ function generatePassword() {
   if (!checkConfirm) {
     return "Please Re-try"
   }
-
+  var finalCharactersGenerated = []; 
+    if (lowerCase) {
+    finalCharactersGenerated = finalCharactersGenerated.concat(charsetLowerCase);
+    } if (upperCase) {
+    finalCharactersGenerated = finalCharactersGenerated.concat(charsetUpperCase);
+    } if (numbers) {
+    finalCharactersGenerated = finalCharactersGenerated.concat(charsetNumbers);
+    } if (specialCharacters) {
+    finalCharactersGenerated = finalCharactersGenerated.concat(charsetSpecialCharacters);
+    }
+  
 };
 
 // Get references to the #generate element
