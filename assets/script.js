@@ -28,6 +28,8 @@ function generatePassword() {
   if (!checkConfirm) {
     return "Please Re-try"
   }
+
+
   var finalCharactersGenerated = []; 
     if (lowerCase) {
     finalCharactersGenerated = finalCharactersGenerated.concat(charsetLowerCase);
@@ -38,7 +40,14 @@ function generatePassword() {
     } if (specialCharacters) {
     finalCharactersGenerated = finalCharactersGenerated.concat(charsetSpecialCharacters);
     }
-  
+    
+    var finalPassword = "";
+
+    for (var i = 0; i < characterNumber; i++) {
+      var index = Math.floor(Math.random() * finalCharactersGenerated.length);
+      finalPassword = finalPassword + finalCharactersGenerated[index];
+    }
+    return finalPassword;
 };
 
 // Get references to the #generate element
