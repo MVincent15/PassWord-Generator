@@ -15,12 +15,14 @@ This website can be used to generate a random password.
 ## Link
 
 Here is the link to the live site: 
-
+https://mvincent15.github.io/PassWord-Generator/
 
 ## Credits
 
 Starter code from https://github.com/coding-boot-camp/friendly-parakeet
+
 Some information taken from bootcamp GitLab repository https://smu.bootcampcontent.com/SMU-Coding-Bootcamp/SMU-VIRT-FSF-PT-02-2023-U-LOLC
+
 Sites used for refrencing code: 
 https://www.studytonight.com/post/building-a-password-generator-with-javascript
 https://gabrieleromanato.name/javascript-create-a-password-generator
